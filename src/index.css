@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css');
+
+:root {
+    --primary-dark: #808091;
+    --primary-light: #49170a;
+  }
+  
+  .icon {
+    color: var(--primary-dark);
+  }
+@layer base{
+    body {
+        @apply font-[Poppins]
+      }
+    
+      li {
+        @apply p-4
+      }
+    
+      h1 {
+        @apply text-3xl md:text-4xl font-bold
+      }
+    
+      h2 {
+        @apply text-3xl font-bold
+      }
+    
+      h3 {
+        @apply text-xl font-bold
+      }
+      button {
+        @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
+      }
+      .icon {
+        @apply text-2xl cursor-pointer
+      }
+      :root {
+        --gray-50: #f9fafb;
+        --gray-100: #f3f4f6;
+        --gray-300: #d1d5db;
+        --gray-400: #93a3af;
+        --gray-500: #6b7280;
+        --gray-600: #4b5563;
+        --gray-700: #374151;
+        --gray-800: #8793a3;
+        --gray-900: #111827;
+      }
+      #light-theme {
+        --primary: #f3f4f6;
+        --comp-primary: #a5a9af;
+        --bg: f1f5f9;
+        --gray-200: #e5e7eb;
+        --white: rgb(172, 147, 147);
+        --black: rgb(218, 201, 201);
+        --blur: 10px;
+      }
+      #dark-theme {
+        --primary: #1f2937;
+        --comp-primary: #f3f4f6;
+        --white: white;
+        --gray-200: #b1bfd6;
+        --black: black;
+      }
+      footer {
+        background-color: var(--primary);
+        color: var(--white);
+        box-shadow: 1px -5px var(--blur) rgba(204, 185, 185, 0.3);
+      }
+      * {
+        transition: all 0.3s ease;
+      }
+      .divider {
+        filter: blur(1px);
+      }
+      input,
+      textarea {
+        background-color: var(--comp-primary);
+        color: var(--black);
+      }
+      .nav-modal {
+        background-color: var(--primary);
+      }
+      button {
+        background-color: var(--comp-primary);
+        color: var(--primary);
+      }
+      .social-wrapper {
+        background-color: white;
+        border: 1px solid var(--comp-primary);
+      }
+      
+
+}
